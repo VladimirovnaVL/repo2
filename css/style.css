@@ -1,0 +1,246 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.content {
+    width: 90vw;
+    margin: auto;
+}
+
+h1, h2 {
+    color: white;
+    text-shadow: 1px 0px 2px rgba(33,14,9,0.05);
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+header {
+  background-image: url('trifeles.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: stretch; 
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px !important;
+
+}
+
+footer {
+    background-image: url('trifeles.jpg');
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input, select {
+      margin-top: 10px;
+      height: 35px;
+      border-radius: 10px;
+      border: 1px solid;
+      font-family: sans-serif;
+      border-color: #81266b;
+      padding-left: 10px;
+  }
+
+
+textarea {
+    height: 55px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-family: sans-serif;
+    border-color: #81266b;
+    padding: 10px;
+}
+
+.info {
+    float: left;
+    width: 50%;
+    display: flex;
+}
+.nav {
+    float: left;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.logo{
+    width: 170px;
+    margin-right: 30px;
+}
+
+h2 {
+    width: 150px;
+    display: block;
+}
+
+.maintitle {
+    width: 100%;
+}
+h1 {
+    display: flex;
+    width: 50%;
+    position: relative;
+    font-size: 56px;
+}
+
+.section1 {
+    width: 50vw;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.section2 {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: stretch;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+@media (max-width: 1040px) {
+
+    .section2 {
+        flex-wrap: wrap;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+.img1 {
+    margin-left: 40px;
+    max-width: 70%;
+    display: inline-block;
+  margin-left: auto;
+    }
+
+
+.form {
+    margin: auto; 
+    margin-bottom: 400px;
+    margin-top: 20px;
+   text-align: center; 
+   width: 400px;
+}
+
+.button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    background-color: #81266b;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1em;
+    margin-top: 4px;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .button2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    background-color: #81266b;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 38px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

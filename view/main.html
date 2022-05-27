@@ -7,17 +7,13 @@
     <title >Latvijas trifeļu entuziasti</title>
 </head>
 
-<body>
+<body>	
+
+	<?php include('.view/header.php'); ?>
+
 <div class="content">
 
-	<div class="header">    
 
-			<a href="main.html" >
-			<img src="logo.png" class="logo" alt="Heading image">
-		</a>
-		<h2>Latvijas trifeļu entuziasti</h2>
-		<h1><strong>Uzsāc vērtigo trifeļu audzēšanu savā saimniecībā!</strong></h1> 
-	</div>
 	
 	<div class="section1">
 
@@ -99,9 +95,9 @@
 					<h3>Saņemt bezmaksas kociņas</h3>
 					<div style="margin-top: 10px; display: flex; flex-direction: column;">
 						
-						<label class="input" for="name">Vārds</label>
+						<label class="input" for="name">Jūsu vārds</label>
 				
-						<input class="input" type="text" placeholder="Kaut kāds teksts" id="name" required>
+						<input class="input" type="text" placeholder="Vārds un uzvārds" id="name" required>
 					</div>
 				
 					<div style="margin-top: 10px; display: flex; flex-direction: column;">
@@ -116,18 +112,23 @@
 
 					<div style="margin-top: 10px; display: flex; flex-direction: column;">
 					
-						<textarea style="margin-top: 10px;" rows="2" cols="10"></textarea>
+						<textarea style="margin-top: 10px;" rows="5" cols="10"  placeholder="Jūsu komentārs" id="name"></textarea>
 					</div>
 		
-					<div style="margin-top:20px">
+					<div style="margin-top:20px; display: flex; justify-content: center;"">
 						<!-- Submit tips saka pārlūkprogrammai, ka šo formu ir jāapstrādā un jāaizsūtā uz serveri
 							 Kura vieta serverī atbildes par šo nosaka attribūti action un method
 						-->
-						<input type="submit" value="Apstiprināt">
+						<input class="button" type="submit" value="Apstiprināt">
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
+
+<footer>
+	<h2>Page footer</h2>
+</footer>
+
 </body>
